@@ -1,0 +1,13 @@
+node_modules/
+.next/
+out/
+.vercel/
+next-env.d.ts
+*.tsbuildinfo
+.env*
+# Nunca subir claves ni libros de notas
+*.csv
+*.xlsx
+CLAVES*
+.DS_Store
+.vercel

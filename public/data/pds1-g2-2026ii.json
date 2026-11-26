@@ -1,0 +1,507 @@
+{
+ "id": "pds1-g2-2026ii",
+ "curso": "Procesamiento de Señales I",
+ "programa": "Ingeniería Electrónica",
+ "grupo": "2",
+ "periodo": "2026II",
+ "profesor": "Jorge Gómez Rojas",
+ "max_total": 500,
+ "nota_minima": 300,
+ "aviso": "Consulta informativa. La nota oficial es la registrada en AYRE.",
+ "actualizado": "2026-11-26 18:22",
+ "componentes": [
+  {
+   "corte": 1,
+   "nombre": "Certificaciones 1 (MATLAB Onramp y Simulink Onramp)",
+   "fecha": "2026-08-05",
+   "max": 50,
+   "peso": 10
+  },
+  {
+   "corte": 1,
+   "nombre": "Laboratorios 1 (reportes 1 a 3)",
+   "fecha": "2026-09-01",
+   "max": 37.5,
+   "peso": 7.5
+  },
+  {
+   "corte": 1,
+   "nombre": "Examen 1",
+   "fecha": "2026-09-08",
+   "max": 100,
+   "peso": 20
+  },
+  {
+   "corte": 2,
+   "nombre": "Certificación 2 (Symbolic Math Onramp)",
+   "fecha": "2026-09-15",
+   "max": 25,
+   "peso": 5
+  },
+  {
+   "corte": 2,
+   "nombre": "Laboratorios 2 (reportes 4 y 5)",
+   "fecha": "2026-09-29",
+   "max": 25,
+   "peso": 5
+  },
+  {
+   "corte": 2,
+   "nombre": "Examen 2",
+   "fecha": "2026-10-13",
+   "max": 100,
+   "peso": 20
+  },
+  {
+   "corte": 3,
+   "nombre": "Laboratorios 3 (reportes 6 a 8)",
+   "fecha": "2026-11-03",
+   "max": 37.5,
+   "peso": 7.5
+  },
+  {
+   "corte": 3,
+   "nombre": "Ejercicios propuestos en clase (promedio)",
+   "max": 25,
+   "peso": 5
+  },
+  {
+   "corte": 3,
+   "nombre": "Examen 3",
+   "fecha": "2026-11-17",
+   "max": 100,
+   "peso": 20
+  }
+ ],
+ "cortes": [
+  {
+   "corte": 1,
+   "nombre": "Corte 1",
+   "max": 187.5
+  },
+  {
+   "corte": 2,
+   "nombre": "Corte 2",
+   "max": 150
+  },
+  {
+   "corte": 3,
+   "nombre": "Corte 3",
+   "max": 162.5
+  }
+ ],
+ "sesiones": [
+  {
+   "fecha": "2026-08-18",
+   "tema": "Caracterización de señales"
+  },
+  {
+   "fecha": "2026-08-25",
+   "tema": "Operaciones con señales"
+  },
+  {
+   "fecha": "2026-09-01",
+   "tema": "Muestreo y recuperación"
+  },
+  {
+   "fecha": "2026-09-08",
+   "tema": "Examen I"
+  },
+  {
+   "fecha": "2026-09-15",
+   "tema": "Sistemas y propiedades"
+  },
+  {
+   "fecha": "2026-09-29",
+   "tema": "Convolución discreta"
+  },
+  {
+   "fecha": "2026-10-06",
+   "tema": "Ecuaciones en diferencias"
+  },
+  {
+   "fecha": "2026-10-13",
+   "tema": "Examen II"
+  },
+  {
+   "fecha": "2026-10-20",
+   "tema": "Serie y transformada de Fourier (TC)"
+  },
+  {
+   "fecha": "2026-10-27",
+   "tema": "DFS, DTFT/DFT, FFT"
+  },
+  {
+   "fecha": "2026-11-10",
+   "tema": "Transformada Z"
+  },
+  {
+   "fecha": "2026-11-17",
+   "tema": "Filtros"
+  }
+ ],
+ "asistencia_nota": "Registro según las planillas de asistencia firmadas en clase. Retardo cuenta como asistencia; excusa médica (falta justificada), salida anticipada y retiro por código de ética cuentan como inasistencia. Si encuentras un error, informa al profesor.",
+ "estadisticas": {
+  "n": 10,
+  "componentes": [
+   35,
+   21,
+   15,
+   20,
+   20,
+   30,
+   20,
+   15,
+   46
+  ],
+  "cortes": [
+   71,
+   70,
+   82
+  ],
+  "definitiva": 222,
+  "asistencia": 87
+ },
+ "estudiantes": [
+  {
+   "codigo": "2022119078",
+   "componentes": [
+    50,
+    34,
+    5,
+    25,
+    25,
+    10,
+    37,
+    19,
+    25
+   ],
+   "cortes": [
+    89,
+    60,
+    81
+   ],
+   "definitiva": 230,
+   "asistencia": [
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P"
+   ]
+  },
+  {
+   "codigo": "2022219059",
+   "componentes": [
+    0,
+    7,
+    1,
+    25,
+    25,
+    1,
+    16,
+    25,
+    100
+   ],
+   "cortes": [
+    8,
+    51,
+    141
+   ],
+   "definitiva": 200,
+   "asistencia": [
+    "P",
+    "P",
+    "P",
+    "P",
+    "R",
+    "P",
+    "P",
+    "P",
+    "F",
+    "P",
+    "P",
+    "F"
+   ]
+  },
+  {
+   "codigo": "2023119055",
+   "componentes": [
+    50,
+    12,
+    10,
+    25,
+    22,
+    64,
+    13,
+    12,
+    42
+   ],
+   "cortes": [
+    72,
+    111,
+    67
+   ],
+   "definitiva": 250,
+   "asistencia": [
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P"
+   ]
+  },
+  {
+   "codigo": "2023219005",
+   "componentes": [
+    50,
+    29,
+    10,
+    25,
+    24,
+    15,
+    32,
+    17,
+    48
+   ],
+   "cortes": [
+    89,
+    64,
+    97
+   ],
+   "definitiva": 250,
+   "asistencia": [
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P"
+   ]
+  },
+  {
+   "codigo": "2023219017",
+   "componentes": [
+    50,
+    29,
+    5,
+    25,
+    24,
+    5,
+    32,
+    18,
+    62
+   ],
+   "cortes": [
+    84,
+    54,
+    112
+   ],
+   "definitiva": 250,
+   "asistencia": [
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P"
+   ]
+  },
+  {
+   "codigo": "2023219021",
+   "componentes": [
+    50,
+    29,
+    15,
+    25,
+    24,
+    15,
+    32,
+    21,
+    39
+   ],
+   "cortes": [
+    94,
+    64,
+    92
+   ],
+   "definitiva": 250,
+   "asistencia": [
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P"
+   ]
+  },
+  {
+   "codigo": "2023219032",
+   "componentes": [
+    0,
+    20,
+    10,
+    0,
+    0,
+    15,
+    0,
+    0,
+    0
+   ],
+   "cortes": [
+    30,
+    15,
+    0
+   ],
+   "definitiva": 45,
+   "asistencia": [
+    "F",
+    "P",
+    "P",
+    "J",
+    "P",
+    "F",
+    "P",
+    "P",
+    "F",
+    "F",
+    "F",
+    "F"
+   ]
+  },
+  {
+   "codigo": "2023219070",
+   "componentes": [
+    50,
+    34,
+    1,
+    25,
+    12,
+    60,
+    24,
+    11,
+    23
+   ],
+   "cortes": [
+    85,
+    97,
+    58
+   ],
+   "definitiva": 240,
+   "asistencia": [
+    "P",
+    "P",
+    "P",
+    "P",
+    "F",
+    "P",
+    "P",
+    "P",
+    "F",
+    "P",
+    "P",
+    "P"
+   ]
+  },
+  {
+   "codigo": "2024119062",
+   "componentes": [
+    50,
+    12,
+    3,
+    25,
+    22,
+    10,
+    13,
+    13,
+    82
+   ],
+   "cortes": [
+    65,
+    57,
+    108
+   ],
+   "definitiva": 230,
+   "asistencia": [
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "P",
+    "F",
+    "P",
+    "P",
+    "P"
+   ]
+  },
+  {
+   "codigo": "2026219084",
+   "componentes": [
+    0,
+    7,
+    85,
+    0,
+    25,
+    100,
+    5,
+    12,
+    42
+   ],
+   "cortes": [
+    92,
+    125,
+    59
+   ],
+   "definitiva": 276,
+   "asistencia": [
+    "P",
+    "P",
+    "P",
+    "J",
+    "P",
+    "P",
+    "P",
+    "P",
+    "F",
+    "P",
+    "F",
+    "F"
+   ]
+  }
+ ]
+}
