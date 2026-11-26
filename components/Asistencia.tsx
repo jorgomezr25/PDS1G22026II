@@ -14,7 +14,6 @@ export default function Asistencia({ curso, estados }: { curso: Curso; estados: 
   const presentes = contar("P"), retardos = contar("R"), faltas = contar("F"), justificadas = contar("J");
   const registradas = estados.filter((x) => x !== null).length;
   const pct = registradas ? ((presentes + retardos) / registradas) * 100 : 0;
-  const prom = curso.estadisticas.asistencia;
 
   return (
     <div className="tarjeta desplazable">
@@ -22,7 +21,6 @@ export default function Asistencia({ curso, estados }: { curso: Curso; estados: 
         <h2 className="titulo-seccion">Asistencia a clase</h2>
         <div className="final">
           <div className="n pequeno">{num(pct, 0)}%</div>
-          {prom != null && <div className="sub">Promedio del grupo: {num(prom, 0)}%</div>}
         </div>
       </div>
 

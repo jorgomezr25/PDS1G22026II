@@ -84,3 +84,11 @@ tr.grupo td { background: var(--pri-2); font-weight: 650; font-size: 14px; }
 .listado .pildora { margin-top: 0; }
 
 .final .n .de { font-size: 18px; color: var(--tenue); font-weight: 500; }
+
+/* Cabecera con escudo y datos del profesor */
+.cabecera-fila { display: flex; align-items: center; gap: 18px; }
+.logo { width: 64px; height: 64px; flex: none; border-radius: 50%; box-shadow: 0 0 0 3px rgba(255,255,255,.25); }
+.cabecera-texto { min-width: 0; }
+.profesor { margin-top: 4px; font-size: 14px; opacity: .92; }
+.profesor a { color: #fff; text-decoration: underline; text-underline-offset: 2px; }
+@media (max-width: 560px) { .logo { width: 52px; height: 52px; } .cabecera h1 { font-size: 20px; } }

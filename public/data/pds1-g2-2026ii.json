@@ -8,7 +8,7 @@
  "max_total": 500,
  "nota_minima": 300,
  "aviso": "Consulta informativa. La nota oficial es la registrada en AYRE.",
- "actualizado": "2026-11-26 18:30",
+ "actualizado": "2026-11-26 18:43",
  "componentes": [
   {
    "corte": 1,
@@ -159,8 +159,7 @@
    70,
    82
   ],
-  "definitiva": 222,
-  "asistencia": 87
+  "definitiva": 222
  },
  "estudiantes": [
   {

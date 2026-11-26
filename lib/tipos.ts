@@ -49,7 +49,6 @@ export interface Curso {
     componentes: (number | null)[];
     cortes: (number | null)[];
     definitiva: number | null;
-    asistencia?: number | null;
   };
   modo?: "publico" | "cifrado";
   estudiantes?: NotasEstudiante[];
