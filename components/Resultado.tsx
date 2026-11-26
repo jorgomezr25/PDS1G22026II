@@ -21,7 +21,7 @@ export default function Resultado({ curso, notas, onSalir }: { curso: Curso; not
           </div>
           <div className="final">
             <div className="sub">Nota definitiva acumulada</div>
-            <div className="n">{notas.definitiva}<span className="de"> / {curso.max_total}</span></div>
+            <div className="n">{notas.definitiva}<span className="de"> / {pts(curso.max_total)}</span></div>
             <div className={`pildora ${aprueba ? "ok" : "mal"}`}>
               {aprueba ? "Aprobando" : `Por debajo de ${curso.nota_minima}`}
             </div>
@@ -36,7 +36,7 @@ export default function Resultado({ curso, notas, onSalir }: { curso: Curso; not
               <div className="corte" key={k.corte}>
                 <h3>{k.nombre}</h3>
                 <div className="v">
-                  {v == null ? <Pendiente /> : pts(v)} <span>/ {k.max} pts</span>
+                  {v == null ? <Pendiente /> : pts(v)} <span>/ {pts(k.max)} pts</span>
                 </div>
                 <div className="pista-barra" title={prom == null ? "" : `Promedio del grupo: ${pts(prom)} pts`}>
                   <div className="relleno" style={{ width: `${v == null ? 0 : Math.min(100, (v / k.max) * 100)}%` }} />
@@ -48,7 +48,7 @@ export default function Resultado({ curso, notas, onSalir }: { curso: Curso; not
         </div>
         <div className="leyenda">
           <span><i />Promedio del grupo</span>
-          <span>Escala de 0 a {curso.max_total} puntos; se aprueba con {curso.nota_minima}.</span>
+          <span>Escala de 0 a {pts(curso.max_total)} puntos; se aprueba con {pts(curso.nota_minima)}.</span>
         </div>
       </div>
 
@@ -65,7 +65,7 @@ export default function Resultado({ curso, notas, onSalir }: { curso: Curso; not
           <tbody>
             {curso.cortes.map((k) => (
               <Fragment key={k.corte}>
-                <tr className="grupo"><td colSpan={2}>{k.nombre}</td><td className="num">{notas.cortes[curso.cortes.indexOf(k)] ?? "—"} / {k.max}</td><td className="num">{st.cortes[curso.cortes.indexOf(k)] ?? "—"}</td></tr>
+                <tr className="grupo"><td colSpan={2}>{k.nombre}</td><td className="num">{notas.cortes[curso.cortes.indexOf(k)] ?? "—"} / {pts(k.max)}</td><td className="num">{st.cortes[curso.cortes.indexOf(k)] ?? "—"}</td></tr>
                 {curso.componentes.map((m, i) => {
                   if (m.corte !== k.corte) return null;
                   const v = notas.componentes[i];
@@ -76,8 +76,8 @@ export default function Resultado({ curso, notas, onSalir }: { curso: Curso; not
                         {m.nombre}
                         {m.fecha && <div className="tenue fecha">{fechaCorta(m.fecha)}</div>}
                       </td>
-                      <td className="num">{m.peso}%</td>
-                      <td className="num">{v == null ? <Pendiente /> : <><b>{pts(v)}</b> / {m.max}</>}</td>
+                      <td className="num">{pts(m.peso)}%</td>
+                      <td className="num">{v == null ? <Pendiente /> : <><b>{pts(v)}</b> / {pts(m.max)}</>}</td>
                       <td className="num tenue">{prom == null ? "—" : pts(prom)}</td>
                     </tr>
                   );

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { num } from "@/lib/formato";
+import { num, pts } from "@/lib/formato";
 import type { Curso, CursoIndice, NotasEstudiante } from "@/lib/tipos";
 import Resultado from "./Resultado";
 
@@ -91,7 +91,7 @@ export default function Consulta() {
                     return (
                       <tr key={e.codigo} onClick={() => { location.hash = e.codigo; }}>
                         <td><a href={`#${e.codigo}`} className="codigo">{e.codigo}</a></td>
-                        <td className="num"><b>{e.definitiva}</b> <span className="tenue">/ {curso.max_total}</span></td>
+                        <td className="num"><b>{e.definitiva}</b> <span className="tenue">/ {pts(curso.max_total)}</span></td>
                         <td className="num"><span className={`pildora ${ok ? "ok" : "mal"}`}>{ok ? "Aprobando" : "Por debajo"}</span></td>
                         <td className="num">{pa == null ? "—" : `${num(pa, 0)}%`}</td>
                       </tr>
